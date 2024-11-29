@@ -1,0 +1,315 @@
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+.nav-item:hover {
+    opacity: 0.7;
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .3);
+}
+
+.hero {
+    background-image: url(actu-black-friday-2024-dates-et-informations-a-retenir-960x640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-top: 250px;
+    color: rgb(191, 128, 46);
+
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 800px 3fr 200px;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    background-color: rgb(150, 167, 177);
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: xx-large;
+    padding-left: 10px;
+    background-color: rgb(190, 184, 184);
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    justify-content: space-around;
+
+
+
+}
+
+.sidebar div a {
+    text-decoration: none;
+}
+
+.sidebar div {
+    border: 1px solid rgb(185, 164, 164) hidden;
+
+
+}
+
+.sidebar div :hover {
+    opacity: 0.7;
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .3);
+
+
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+
+footer {
+    grid-area: footer;
+
+    background-color: #c2fbd7;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+
+
+}
+
+
+.artcl {
+    font-size: x-large;
+
+
+}
+
+
+
+.artcl :hover {
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .3);
+    opacity: 0.8;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.deal {
+    color: white;
+
+    border: 1px solid white;
+    width: 250px;
+    background-color: rgb(132, 0, 0);
+}
+
+.price {
+    text-decoration: underline;
+}
+
+.icons {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+.fa {
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .3);
+
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #f00145;
+    color: white;
+}
+
+.fa-tiktok {
+    background: #000000;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar * {
+        font-size: x-large;
+
+
+    }
+
+    .navbar img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+        .navbar * {
+            font-size: medium;
+
+
+        }
+
+        .navbar img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+
+
+
+@media screen and (max-width: 750px) {
+    main {
+        grid-area: main;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        grid-area: aside;
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        grid-template-rows: auto;
+    }
+
+
+    footer {}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+
+/* CSS */
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
